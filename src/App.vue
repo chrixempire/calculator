@@ -110,6 +110,19 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 10%;
+  margin-top: 60px;
 }
+
+@media screen and (max-width : 600px) {
+  #app{
+    margin-top: 100px ;
+  }
+}
+
+@media screen and (max-width : 400px) {
+  #app{
+    margin-top: 60px ;
+  }
+}
+
 </style>
