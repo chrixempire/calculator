@@ -80,11 +80,11 @@ export default {
       this.setPrevious()
     },
     divide(){
-      this.operator = (a,b) => a * b
+      this.operator = (a,b) => a / b
       this.setPrevious()
     },
     minus(){
-      this.operator = (a,b) => a * b
+      this.operator = (a,b) => a - b
       this.setPrevious()
     },
     sign(){
@@ -92,8 +92,8 @@ export default {
       this.calculatorValue.slice(1) : `-${this.calculatorValue}`
     },
     equal(){
-      this.calculatorValue = `${this.operator(parseFloat(this.calculatorValue),
-        parseFloat(this.previousValue))}`
+      this.calculatorValue = `${this.operator(parseFloat(this.previousValue),
+        parseFloat(this.calculatorValue))}`
     },
     percent(){
       this.calculatorValue = parseFloat(this.calculatorValue) / 100
